@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Itens</title>
+</head>
+<body>
+    <h1>Adicionar Itens</h1>
+    <form method="post">
+        <input type="text" name="item" placeholder="Digite um item" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Itens cadastrados:</h2>
+    <ul>
+        {% for item in itens %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
